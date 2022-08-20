@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/21" />
+    <file type="web" url="file://$PROJECT_DIR$/ajaxDemo" />
+    <file type="web" url="file://$PROJECT_DIR$/brandDemo" />
+    <file type="web" url="file://$PROJECT_DIR$/cookieDemo" />
+    <file type="web" url="file://$PROJECT_DIR$/filterDemo" />
+    <file type="web" url="file://$PROJECT_DIR$/jspDemo" />
+    <file type="web" url="file://$PROJECT_DIR$/request_responseDemo" />
+    <file type="web" url="file://$PROJECT_DIR$/servletDemo" />
+    <file type="web" url="file://$PROJECT_DIR$/test" />
+    <file type="web" url="file://$PROJECT_DIR$/TomCatDemo" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/HelloWorld/pom.xml" />
+        <option value="$PROJECT_DIR$/TestTomcat/pom.xml" />
+        <option value="$PROJECT_DIR$/requestDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatisTest/pom.xml" />
+        <option value="$PROJECT_DIR$/brandDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/ajaxDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/cookieDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/filterDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/jspDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/request_responseDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/servletDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/TomCatDemo/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

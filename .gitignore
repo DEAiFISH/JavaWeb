@@ -1,0 +1,10 @@
+# 项目排除路径
+/ajaxDemo/target/
+/brandDemo/target/
+/cookieDemo/target/
+/filterDemo/target/
+/jspDemo/target/
+/mybatisTest/target/
+/request_responseDemo/target/
+/servletDemo/target/
+/TomCatDemo/target/
