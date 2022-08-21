@@ -7,6 +7,7 @@ import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import static util.SqlSessionFactoryUtils.getSqlSessionFactory;
@@ -23,6 +24,9 @@ public class text {
         List list = mapper.selectAll();
 
         list.forEach(System.out::println);
+
+        sqlSession.close();
+
     }
 
     @Test
@@ -34,6 +38,9 @@ public class text {
         List<Employee> employees = mapper.selectAllOfEmployee();
 
         employees.forEach(System.out::println);
+
+        sqlSession.close();
+
     }
 
     @Test
@@ -47,6 +54,9 @@ public class text {
         System.out.println("employee = " + employee);
 
         System.out.println("employee.getDepartment() = " + employee.getDepartment());
+
+        sqlSession.close();
+
     }
 
     @Test
@@ -58,6 +68,9 @@ public class text {
         Department department = mapper.selectDepartmentByName("华山");
 
         System.out.println(department.getDeptId());
+
+        sqlSession.close();
+
     }
 
     @Test
@@ -69,6 +82,54 @@ public class text {
         List<Employee> employeeList = mapper.selectEmployee(new Employee(null, null, null, 1));
 
         employeeList.forEach(System.out::println);
+
+        sqlSession.close();
+    }
+
+    @Test
+    public void Text6() {
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+
+        EmployeeMapper mapper = sqlSession.getMapper(EmployeeMapper.class);
+
+        ArrayList<Employee> employees = new ArrayList<>();
+        employees.add(new Employee("晁祥翔", 100011, 19, 1));
+        employees.add(new Employee("程莉茹", 100012, 19, 1));
+        employees.add(new Employee("赵禹", 100013, 19, 1));
+
+        mapper.insertMoreEmp(employees);
+
+        sqlSession.commit();
+
+        sqlSession.close();
+    }
+
+    @Test
+    public void Test7() {
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+
+        EmployeeMapper mapper = sqlSession.getMapper(EmployeeMapper.class);
+
+        mapper.deleteEmpByName("赵禹");
+
+        sqlSession.commit();
+
+        sqlSession.close();
+    }
+
+    @Test
+    public void Text8() {
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+
+        EmployeeMapper mapper = sqlSession.getMapper(EmployeeMapper.class);
+
+        Integer[] empIds = new Integer[]{100011, 100012};
+
+        mapper.deleteMoreEmp(empIds);
+
+        sqlSession.commit();
+
+        sqlSession.close();
     }
 
 }

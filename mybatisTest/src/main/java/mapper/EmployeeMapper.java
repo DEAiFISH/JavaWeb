@@ -26,6 +26,9 @@ public interface EmployeeMapper {
     @Select("select empno,name,age,deptId from t_emp where deptId = #{deptId}")
     List<Employee> selectEmpByDeptId(Integer deptId);
 
+    @Delete("delete from t_emp where name = #{name}")
+    void deleteEmpByName(String name);
+
 
     // 动态SQL
 
@@ -39,4 +42,23 @@ public interface EmployeeMapper {
             "</where>" +
             "</script>")
     List<Employee> selectEmployee(Employee employee);
+
+
+    @Insert("<script> insert into t_emp values" +
+            "<foreach collection = 'emps'  item = 'emp' separator = ','>" +
+            "(null,#{emp.name},#{emp.age},#{emp.deptId},#{emp.id})" +
+            "</foreach>" +
+            "</script>")
+    void insertMoreEmp(@Param("emps") List<Employee> emps);
+
+
+    @Delete("<script>" +
+            "delete from t_emp where empno in (" +
+            "<foreach collection = 'empIds' item = 'empId' separator = ','>" +
+            "#{empId}" +
+            "</foreach>" +
+            ")" +
+            "</script>")
+    void deleteMoreEmp(@Param("empIds") Integer[] empIds);
+
 }
