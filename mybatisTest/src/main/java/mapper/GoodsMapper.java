@@ -11,6 +11,4 @@ public interface GoodsMapper {
 //    @ResultType(bean.Goods.class)
     @ResultMap("goodsMap")
     List<Goods> selectAll();
-
-
 }

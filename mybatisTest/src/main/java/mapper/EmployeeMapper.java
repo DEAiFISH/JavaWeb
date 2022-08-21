@@ -53,11 +53,10 @@ public interface EmployeeMapper {
 
 
     @Delete("<script>" +
-            "delete from t_emp where empno in (" +
-            "<foreach collection = 'empIds' item = 'empId' separator = ','>" +
+            "delete from t_emp where empno in " +
+            "<foreach collection = 'empIds' item = 'empId' separator = ',' open = '(' close = ')'>" +
             "#{empId}" +
             "</foreach>" +
-            ")" +
             "</script>")
     void deleteMoreEmp(@Param("empIds") Integer[] empIds);
 
