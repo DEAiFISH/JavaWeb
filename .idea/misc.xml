@@ -28,6 +28,7 @@
         <option value="$PROJECT_DIR$/request_responseDemo/pom.xml" />
         <option value="$PROJECT_DIR$/servletDemo/pom.xml" />
         <option value="$PROJECT_DIR$/TomCatDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/MyBatis_generator/pom.xml" />
       </list>
     </option>
   </component>

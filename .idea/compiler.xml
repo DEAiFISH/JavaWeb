@@ -16,6 +16,7 @@
         <module name="cookieDemo" />
         <module name="filterDemo" />
         <module name="servletDemo" />
+        <module name="MyBatis_generator" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
