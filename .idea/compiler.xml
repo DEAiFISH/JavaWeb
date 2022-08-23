@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="brandDemo" />
+        <module name="MyBatis_mbg" />
         <module name="mybatisTest" />
         <module name="jspDemo" />
         <module name="requestDemo" />
@@ -16,12 +17,12 @@
         <module name="cookieDemo" />
         <module name="filterDemo" />
         <module name="servletDemo" />
-        <module name="MyBatis_generator" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="brandDemo (1)" target="17" />
       <module name="HelloWorld" target="14" />
+      <module name="MyBatis_generator" target="17" />
       <module name="test" target="17" />
       <module name="TestTomcat" target="17" />
       <module name="tomcatDemo" target="14" />
