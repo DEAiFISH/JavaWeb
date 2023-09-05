@@ -20,15 +20,8 @@
         <option value="$PROJECT_DIR$/TestTomcat/pom.xml" />
         <option value="$PROJECT_DIR$/requestDemo/pom.xml" />
         <option value="$PROJECT_DIR$/mybatisTest/pom.xml" />
-        <option value="$PROJECT_DIR$/brandDemo/pom.xml" />
-        <option value="$PROJECT_DIR$/ajaxDemo/pom.xml" />
-        <option value="$PROJECT_DIR$/cookieDemo/pom.xml" />
-        <option value="$PROJECT_DIR$/filterDemo/pom.xml" />
-        <option value="$PROJECT_DIR$/jspDemo/pom.xml" />
-        <option value="$PROJECT_DIR$/request_responseDemo/pom.xml" />
-        <option value="$PROJECT_DIR$/servletDemo/pom.xml" />
-        <option value="$PROJECT_DIR$/TomCatDemo/pom.xml" />
         <option value="$PROJECT_DIR$/MyBatis_mbg/pom.xml" />
+        <option value="$PROJECT_DIR$/jspDemo/pom.xml" />
       </list>
     </option>
   </component>
