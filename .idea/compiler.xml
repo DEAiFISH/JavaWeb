@@ -10,6 +10,7 @@
         <module name="mybatisTest" />
         <module name="request_responseDemo" />
         <module name="jspDemo" />
+        <module name="TomCatDemo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -22,11 +23,10 @@
       <module name="MyBatis_generator" target="17" />
       <module name="requestDemo" target="1.7" />
       <module name="servletDemo" target="14" />
-      <module name="test" target="17" />
+      <module name="test" target="18" />
       <module name="TestTomcat" target="17" />
       <module name="tomcatDemo" target="14" />
       <module name="TomcatDemo" target="17" />
-      <module name="TomCatDemo" target="1.7" />
       <module name="TomCatTest" target="17" />
       <module name="tomcatTest" target="17" />
       <module name="untitled" target="17" />
