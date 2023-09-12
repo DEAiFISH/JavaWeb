@@ -7,25 +7,39 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%--<%@ include file="file.jsp" %>--%>
-<jsp:include page="file.jsp"/>
+<%--<jsp:include page="file.jsp"/>--%>
 <html>
 <head>
     <title>Title</title>
-
-    <style>
-        table {
-            /*color: red;*/
-            border: 1px solid black;
-        }
-    </style>
 </head>
 <body>
 <h1> hello </h1>
 <br
-        1111
-<jsp:forward page="file.jsp">
-    <jsp:param name="user" value="123"/>
-</jsp:forward>
 
+<%--<%--%>
+<%--    request.setAttribute("a", 10);--%>
+<%--%>--%>
+
+<%--<jsp:forward page="file.jsp">--%>
+<%--    <jsp:param name="user" value="123"/>--%>
+<%--</jsp:forward>--%>
+
+
+<%--<input type="submit" value="word" name="submit">--%>
+<%--<input type="submit" value="excel" name="submit">--%>
+
+<%--<%--%>
+<%--    String str = request.getParameter("submit");--%>
+<%--    if ("word".equals(str)) {--%>
+<%--        response.setContentType("application/msword");--%>
+<%--    } else if ("excel".equals(str)) {--%>
+<%--        response.setContentType("application/vnd.ms-excel");--%>
+<%--    }--%>
+<%--%>--%>
+
+<%
+    //    response.setHeader("refresh", "5;url=file.jsp");
+    response.sendRedirect("file.jsp");
+%>
 </body>
 </html>

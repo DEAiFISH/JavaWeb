@@ -12,9 +12,11 @@
 </head>
 <body>
 <h1>hello file</h1>
-<%
-    String user = request.getParameter("user");
-    out.print(user);
-%>
+<%--<%--%>
+<%--    String user = request.getParameter("user");--%>
+<%--    out.print(user + "<br/>");--%>
+
+<%--    out.print(request.getAttribute("a"));--%>
+<%--%>--%>
 </body>
 </html>
