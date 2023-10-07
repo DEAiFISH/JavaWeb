@@ -1,6 +1,7 @@
 package servlet;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -14,27 +15,40 @@ import java.io.PrintWriter;
  * @author DEAiFISH
  * @date 2023/9/28 08:54
  */
-//@WebServlet("servletTest")
+@WebServlet("/servletTest")
 public class ServletTest extends HttpServlet {
     @Override
-    protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        //设置响应的内容类型
-        resp.setContentType("text/html;charset=utf-8");
-        //取得输出对象
-        PrintWriter out = resp.getWriter();
-        out.println("<html><body>");
-        //浏览器中显示“第二个Servlet类”
-        out.println("第二个Servlet类");
-        out.println("</body></html>");
+    public void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String user = request.getParameter("user");
+        String passwd = request.getParameter("passwd");
+
+        PrintWriter writer = response.getWriter();
+
+        writer.println("<html><body>");
+        writer.println(user);
+        writer.println(passwd);
+        writer.println("</body></html>");
+
+
     }
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doPost(req, resp);
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("utf-8");
+        response.setContentType("text/html;charset=UTF-8");
+        PrintWriter writer = response.getWriter();
+
+        writer.println(request.getParameter("user"));
+        writer.println(request.getParameter("passwd"));
     }
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doGet(req, resp);
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("utf-8");
+        response.setContentType("text/html;charset=UTF-8");
+        PrintWriter writer = response.getWriter();
+
+        writer.println(request.getParameter("user"));
+        writer.println(request.getParameter("passwd"));
     }
 }
