@@ -1,5 +1,6 @@
 package listener;
 
+import javax.servlet.annotation.WebListener;
 import javax.servlet.http.HttpSessionAttributeListener;
 import javax.servlet.http.HttpSessionBindingEvent;
 import javax.servlet.http.HttpSessionEvent;
@@ -11,6 +12,8 @@ import javax.servlet.http.HttpSessionListener;
  * @author DEAiFISH
  * @date 2023/10/31 08:55
  */
+@WebListener
+
 public class SessionRequest implements HttpSessionListener, HttpSessionAttributeListener {
     /**
      * @description session创建

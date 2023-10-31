@@ -4,6 +4,7 @@ import javax.servlet.ServletRequestAttributeEvent;
 import javax.servlet.ServletRequestAttributeListener;
 import javax.servlet.ServletRequestEvent;
 import javax.servlet.ServletRequestListener;
+import javax.servlet.annotation.WebListener;
 
 /**
  * @description TODO
@@ -11,6 +12,7 @@ import javax.servlet.ServletRequestListener;
  * @author DEAiFISH
  * @date 2023/10/31 08:54
  */
+@WebListener
 public class RequestListener implements ServletRequestListener, ServletRequestAttributeListener {
     /**
      * @description 创建对象
