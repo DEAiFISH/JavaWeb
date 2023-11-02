@@ -11,7 +11,7 @@ import java.io.IOException;
  * @author DEAiFISH
  * @date 2023/10/24 08:44
  */
-@WebFilter(urlPatterns = {"*.jsp"})
+@WebFilter(urlPatterns = {"*.jsp","/index.jsp"})
 public class FirstFilter implements Filter {
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
