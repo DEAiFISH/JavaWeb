@@ -43,7 +43,7 @@
         主体内容2
     </c:when>
     <c:when test="条件表达式3">
-        主体内容2
+        主体内容3
     </c:when>
     <c:otherwise>
         表达式都不正确时，执行的主体内容
@@ -65,6 +65,13 @@
 <c:redirect url="jstl.jsp">
 
 </c:redirect>
+<jsp:forward page="jstl.jsp">
+
+</jsp:forward>
+<%
+    request.getRequestDispatcher("jstl.jsp");
+    response.sendRedirect("jstl.jsp");
+%>
 
 <c:import url="../index.jsp"/>
 

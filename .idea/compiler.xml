@@ -11,6 +11,7 @@
         <module name="mybatisTest" />
         <module name="request_responseDemo" />
         <module name="jspDemo" />
+        <module name="jdbcdemo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

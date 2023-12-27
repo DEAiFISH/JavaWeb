@@ -14,6 +14,10 @@ public class Book {
     public Book() {
     }
 
+    public Book(String id, String name) {
+        this.id = id;
+        this.name = name;
+    }
     public Book(String id, String name, float price) {
         this.id = id;
         this.name = name;

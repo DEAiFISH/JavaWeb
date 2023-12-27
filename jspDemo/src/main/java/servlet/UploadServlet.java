@@ -35,10 +35,7 @@ public class UploadServlet extends HttpServlet {
             return;
         }
         String fileName = part.getSubmittedFileName();
-
-//        String path = req.getServletContext().getRealPath("upload");
-        String path = System.getProperty("user.dir") + "/" + "upload";    //System.getProperty("user.dir")获取当前模块的根目录
-
+        String path = req.getServletContext().getRealPath("/uploadFiles");
         File dir = new File(path);
         if (!dir.exists()) {
             dir.mkdir();
